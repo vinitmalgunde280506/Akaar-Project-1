@@ -1,0 +1,53 @@
+[
+  {
+    "id": 1753458220320,
+    "address": "abcd",
+    "phone": "1234512345",
+    "quantity": 1,
+    "customizations": {
+      "color": "orange",
+      "texture": "",
+      "design": "",
+      "material": "Material",
+      "text": "",
+      "size": "Size"
+    },
+    "price": 50,
+    "status": "Placed",
+    "estimatedDelivery": "5-7 Days"
+  },
+  {
+    "id": 1753459419665,
+    "address": "abcd",
+    "phone": "1234512345",
+    "quantity": 1,
+    "customizations": {
+      "color": "red",
+      "texture": "",
+      "design": "",
+      "material": "Material",
+      "text": "",
+      "size": "Size"
+    },
+    "price": 50,
+    "status": "Placed",
+    "estimatedDelivery": "5-7 Days"
+  },
+  {
+    "id": 1753459644167,
+    "address": "abcd",
+    "phone": "1234512345",
+    "quantity": 1,
+    "customizations": {
+      "color": "orange",
+      "texture": "",
+      "design": "",
+      "material": "Material",
+      "text": "",
+      "size": "Size"
+    },
+    "price": 50,
+    "status": "Placed",
+    "estimatedDelivery": "5-7 Days"
+  }
+]

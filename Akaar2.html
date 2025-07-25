@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+       body{
+            background-image: url(Picture3.png);
+            background-repeat: no-repeat;  
+            background-size: cover;
+        }
+        #all{
+                width: 1520px;
+                height: 695px;
+            }
+            #all .container{
+                width:1520px;
+            }
+            #all #main{
+                
+                height: 150px;
+            }
+            #all #page{
+                
+                height: 545px;
+            }
+            #logo{
+                float: left;
+                width: 150px;
+                height: 150px;
+                background-image: url(Logo.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                
+            }
+            #line{
+                height: 30px;
+                width: 1350px;
+                margin: 0px 0px 0px 150px;
+                padding: 0px;
+                color: white;
+                font-size: 22px;
+                padding: 5px;
+            }
+            #navigation{
+                height: 40px;
+                background-color: black;
+                border-radius: 10px;
+                width: 1250px;
+                margin: 0px 5px 0px 155px;
+                padding: 5px;
+            }
+            #options{
+                height: 40px;
+                width: 1360px;
+
+                margin: 0px 0px 0px 150px;
+                padding: 0px;
+            }
+            #menu{
+                float: right;
+                width: 100px;
+                height: 100px;
+                background-color: grey;   
+                margin:0px;
+            }
+            #offers{
+                float: left;
+                width: 250px;
+                height: 545px;
+                background-color: black;
+                color: white;
+            }
+            #wlcm{
+                color: white;
+                margin: 0px;
+                border: solid white 2px;
+                height: 542px;
+                
+            }
+           a {
+            text-decoration: none;
+        }
+        ul{
+            list-style: none;
+        }
+        #NB1 li{
+            float: right;
+        }
+        #NB1 li a{
+            color: white;
+            font-size: 22px;
+           margin: 0px 20px;
+           padding: 10px;
+           position: relative;
+           bottom: 10px;
+           right: 45px;
+        }
+        #NB2 li{
+            float: left;
+        }
+        #NB2 li a{
+            color: white;
+            font-size: 22px;
+           margin: 0px 38px;
+           padding: 10px;
+           
+        }
+        .slider {
+    position: relative;
+    width: 250px;
+    height: 545px;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+.text{
+    margin: 0px;
+    padding: 0px 0px 0px 260px;
+    position: relative;
+    top: 245px;
+    
+}
+h1{
+    font-size: 55px;
+}
+p{
+    font-size: 25px;
+}
+#custom_btn a{
+    background-color: white;
+    height: 31px;
+    display: inline-block;
+    position: absolute;
+    top: 58px;
+    left: 450px;
+    font-size: 22px;
+    padding:0px 70px;
+    font-weight: bold;
+    color: black;
+
+}
+
+
+        </style>
+    </head>
+    <body>
+         <div id="all">
+        <div id="main" class="container">
+            <div id="logo" class="value"></div>
+            <div id="line" class="value">Now, your choice is entirely up to your creativity!</div>
+            <div id="menu" class="value"><a href="menu.html"><img src="menu.png" alt="" id="menu-img" style="cursor: pointer;"></a></div>
+            <div id="navigation" class="value">
+                <ul id="NB1">
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="signup.html">Sign Up</a></li>
+                    <li><a href="orders.html">Orders</a></li>
+                    
+                </ul>
+            </div>
+            <div id="options" class="value">
+                <ul id="NB2">
+                    <li><a href="pending.html">OUTWEAR</a></li>
+                    <li><a href="pending.html">HEADWEAR</a></li>
+                    <li><a href="pending.html">FOOTWEAR</a></li>
+                    <li><a href="pending.html">ACCESORIES</a></li>
+                    <li><a href="customize.html">TOP</a></li>
+                    <li><a href="pending.html">BOTTOM</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div id="page" class="container">
+            <div id="offers" class="value">
+    <div class="slider">
+        <img src="https://www.placeholderimage.online/placeholder/250/545/f3f4f6/1f2937?text=Offer-1&font=Lato.svg" class="slide" style="opacity: 1;">
+        <img src="https://www.placeholderimage.online/placeholder/250/545/f3f4f6/1f2937?text=Offer-2&font=Lato.svg" class="slide">
+        <img src="https://www.placeholderimage.online/placeholder/250/545/f3f4f6/1f2937?text=Offer-3&font=Lato.svg" class="slide">
+    </div>
+</div>
+            <div id="wlcm" class="value">
+                <h1 class="text">Create Your Dream Outfit with Akaar</h1>
+<p class="text">
+Akaar empowers you to design your own outfit just the way you imagine it. Choose from a variety of sizes, colors, textures, and more to 
+bring your dream outfit to life. As you design, preview your creation virtually in real-time and once you're satisfied, place an order
+ with ease.<br><br>
+You can also explore a curated collection of ready-made outfits designed by top fashion experts. Your custom outfit will be delivered 
+to your doorstep within 1–2 weeks.<br><br>
+Experience the joy of fashion designing, and wear what truly reflects you. Welcome to Akaar!
+</p>
+            </div>
+        </div>
+        </div>
+        <div id="custom_btn"><a href="customize.html">+ Customize Your Outfit</a></div>
+
+        
+
+        <script>
+
+
+setInterval(() => {
+    slides[currentSlide].style.opacity = 0;
+    currentSlide = (currentSlide + 1) % slides.length;
+    slides[currentSlide].style.opacity = 1;
+}, 3000);
+</script>
+    </body>
+</html>

@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T-Shirt Shape</title>
+  <style>
+    body{
+        background-image: url(Custombg.png);
+    }
+    #waist{
+        height: 260px;
+        width: 190px;
+        background-color: white;
+        position:absolute;
+        top: 100px;
+        left: 667px;
+        border: solid black 5px;
+    }
+    .shoulder{
+        background-color: white;
+        height: 135px;
+        width: 135px;
+        border-radius: 70px;
+        border-top: solid black 5px;
+        
+    }
+    #shoulder1{
+        position: absolute;  
+        left: 597px;  
+        top: 100px;
+        border-left: solid black 5px;
+    }
+    #shoulder2{
+        position: absolute;  
+        left: 797px;
+        top: 100px;
+        border-right: solid black 5px;
+    }
+    .arm{
+        background-color: white;
+        height: 95px;
+        width: 65px;
+        border-bottom: solid black 5px;
+    }
+    #arm1{
+        position: absolute;
+        top: 170px;
+        left: 597px;
+        border-left: solid black 5px;
+    }
+     #arm2{
+        position: absolute;
+        top: 170px;
+        left: 867px;
+        border-right: solid black 5px;
+    }
+    #outer{
+        width:100px;
+        height: 60px;
+        border-radius: 40px;
+        position: absolute;
+        top: 90px;
+        left: 712px;
+        background-color: white;
+        border: solid black 5px;
+    }
+    #collar{
+        width: 80px;
+        height: 40px;
+        border-radius: 40px;
+        background-color: rgba(0, 0, 0, 0.523);
+        position: absolute;
+        top: 100px;
+        left: 727px;
+    }
+    
+    #opt1{
+        background-color: rgba(0, 0, 0, 0.175);
+        height: 177px;
+        width: 255px;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        border: solid black 1px;
+    }
+    #opt2{
+        background-color: rgba(0, 0, 0, 0.175);
+        height: 177px;
+        width: 255px;
+        position: absolute;
+        top: 178px;
+        left: 0%;
+        border: solid black 1px;
+    }
+    #opt3{
+        background-color: rgba(0, 0, 0, 0.175);
+        height: 177px;
+        width: 255px;
+        position: absolute;
+        top: 356px;
+        left: 0%;
+        border: solid black 1px;
+    }
+    #opt4{
+        background-color: rgba(0, 0, 0, 0.175);
+        height: 177px;
+        width: 255px;
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        border: solid black 1px;
+    }
+    #opt5{
+        background-color: rgba(0, 0, 0, 0.175);
+        height: 177px;
+        width: 255px;
+        position: absolute;
+        top: 178px;
+        right: 0%;
+        border: solid black 1px;
+    }
+    #opt6{
+        background-color: rgba(0, 0, 0, 0.175);
+        height: 177px;
+        width: 255px;
+        position: absolute;
+        top: 356px;
+        right: 0%;
+        border: solid black 1px;
+    }
+    #opt7{
+        background-color: rgba(0, 0, 0, 0.175);
+        height: 178px;
+        width: 255px;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        border: solid black 1px;
+    }
+    #opt8{
+        background-color: rgba(0, 0, 0, 0.175);
+        height: 178px;
+        width: 255px;
+        position: absolute;
+        bottom: 0px;
+        left: 255px;
+        border: solid black 1px;
+    }
+    #opt9{
+        background-color: rgba(0, 0, 0, 0.175);
+        height: 178px;
+        width: 256px;
+        position: absolute;
+        bottom: 0px;
+        left: 510px;
+        border: solid black 1px;
+    }
+    #opt10{
+        background-color: rgba(0, 0, 0, 0.175);
+        height: 178px;
+        width: 257px;
+        position: absolute;
+        bottom: 0px;
+        right: 510px;
+        border: solid black 1px;
+    }
+    #opt11{
+        background-color: rgba(0, 0, 0, 0.175);
+        height: 178px;
+        width: 255px;
+        position: absolute;
+        bottom: 0px;
+        right: 255px;
+        border: solid black 1px;
+    }
+    #opt12{
+        background-color: rgba(0, 0, 0, 0.175);
+        height: 178px;
+        width: 255px;
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        border: solid black 1px;
+    }
+    .opt{
+        color: black;
+        font-size: 40px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .opt a{
+        position: relative;
+        top: 60px;
+        text-decoration: none;
+        color: black;
+    }
+    #waist, #shoulder1, #shoulder2, #arm1, #arm2, #outer {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#tshirt-text{
+    text-align: center;
+  }
+  </style>
+</head>
+<body>
+  <div class="tshirt">
+    <div id="waist"></div>   
+    <div id="shoulder1" class="shoulder"></div>
+    <div id="arm1" class="arm"></div>
+    <div id="shoulder2" class="shoulder"></div>
+    <div id="arm2" class="arm"></div> 
+    <div id="outer"></div>
+    <div id="collar"></div>
+    <div id="tshirt-text" style="width:190px ; position:absolute; top:210px; left:672px; font-size:30px; font-weight:bold; color:black;"></div>
+  </div>
+  <div id="opt1" class="opt"><a href="#">Colour</a></div>
+  <div id="opt2" class="opt"><a href="#">Texture</a></div>
+  <div id="opt3" class="opt"><a href="#">Design</a></div>
+  <div id="opt4" class="opt"><a href="#" id="size">Size</a></div>
+  <div id="opt5" class="opt"><a href="#">Text</a></div>
+  <div id="opt6" class="opt"><a href="#" id="material">Material</a></div>
+  <div id="opt7" class="opt"><a href="pending.html">Outwear</a></div>
+  <div id="opt8" class="opt"><a href="pending.html">Headwear</a></div>
+  <div id="opt9" class="opt"><a href="pending.html">Footwear</a></div>
+  <div id="opt10" class="opt"><a href="pending.html">Accesories</a></div>
+  <div id="opt11" class="opt"><a href="customize.html">Top</a></div>
+  <div id="opt12" class="opt"><a href="pending.html">Bottom</a></div>
+  <!-- Color options container -->
+<div id="color-picker" style="display:none; position:absolute; top:100px; left:20px; background:#fff; padding:10px; border:2px solid black; border-radius:8px;">
+  <div style="display: flex; gap: 10px;">
+    <div onclick="changeTshirtColor('red')" style="background:red; width:30px; height:30px; border-radius:50%; cursor:pointer;"></div>
+    <div onclick="changeTshirtColor('blue')" style="background:blue; width:30px; height:30px; border-radius:50%; cursor:pointer;"></div>
+    <div onclick="changeTshirtColor('green')" style="background:green; width:30px; height:30px; border-radius:50%; cursor:pointer;"></div>
+    <div onclick="changeTshirtColor('yellow')" style="background:yellow; width:30px; height:30px; border-radius:50%; cursor:pointer;"></div>
+    <div onclick="changeTshirtColor('orange')" style="background:orange; width:30px; height:30px; border-radius:50%; cursor:pointer;"></div>
+  </div>
+</div>
+<!-- Design options container -->
+<div id="design-picker" style="display:none; position:absolute; top:456px; left:20px; background:#fff; padding:10px; border:2px solid black; border-radius:8px;">
+  <div style="display: flex; gap: 10px;">
+    <img src="design1.jpg" onclick="changeTshirtDesign('design1.jpg')" style="width:30px; height:30px; cursor:pointer;" />
+    <img src="design2.jpeg" onclick="changeTshirtDesign('design2.jpeg')" style="width:30px; height:30px; cursor:pointer;" />
+    <img src="design3.png" onclick="changeTshirtDesign('design3.png')" style="width:30px; height:30px; cursor:pointer;" />
+    <img src="design4.jpg" onclick="changeTshirtDesign('design4.jpg')" style="width:30px; height:30px; cursor:pointer;" />
+  </div>
+</div>
+
+<!-- Texture options container -->
+<div id="texture-picker" style="display:none; position:absolute; top:278px; left:20px; background:#fff; padding:10px; border:2px solid black; border-radius:8px;">
+  <div style="display: flex; gap: 10px;">
+    <img src="texture1.jpg" onclick="changeTshirtTexture('safeimagekit-texture1.jpeg')" style="width:30px; height:30px; cursor:pointer;" />
+    <img src="texture2.jpg" onclick="changeTshirtTexture('safeimagekit-texture2.jpeg')" style="width:30px; height:30px; cursor:pointer;" />
+    <img src="texture3.jpg" onclick="changeTshirtTexture('safeimagekit-texture3.jpeg')" style="width:30px; height:30px; cursor:pointer;" />
+    <img src="texture4.jpg" onclick="changeTshirtTexture('safeimagekit-texture4.jpeg')" style="width:30px; height:30px; cursor:pointer;" />
+  </div>
+</div>
+<!-- Size options container-->
+<div id="size-picker" style="display:none; position:absolute; top:100px; right:20px; background:#fff; padding:10px; border:2px solid black; border-radius:8px;">
+    <div style="display: flex; gap: 10px;">
+        <div onclick="changeTshirtSize('S')" style="width:30px; height:30px; cursor:pointer;">S</div>
+        <div onclick="changeTshirtSize('M')" style="width:30px; height:30px; cursor:pointer;">M</div>
+        <div onclick="changeTshirtSize('L')" style="width:30px; height:30px; cursor:pointer;">L</div>
+        <div onclick="changeTshirtSize('XL')" style="width:30px; height:30px; cursor:pointer;">XL</div>
+    </div>
+</div>
+<!-- Material options container-->
+<div id="material-picker" style="display:none; position:absolute; top:456px; right:20px; background:#fff; padding:10px; border:2px solid black; border-radius:8px;">
+    <div style="display: flex; gap: 10px;">
+        <div onclick="changeTshirtMaterial('Cotton')" style="width:auto; height:30px; cursor:pointer;">Cotton</div>
+        <div onclick="changeTshirtMaterial('Silk')" style="width:auto; height:30px; cursor:pointer;">Silk</div>
+        <div onclick="changeTshirtMaterial('Wool')" style="width:auto; height:30px; cursor:pointer;">Wool</div>
+        <div onclick="changeTshirtMaterial('Denim')" style="width:auto; height:30px; cursor:pointer;">Denim</div>
+    </div>
+</div>
+<!-- Text input container -->
+<div id="text-picker" style="display:none; position:absolute; top:278px; right:20px; background:#fff; padding:10px; border:2px solid black; border-radius:8px;">
+  <input type="text" id="text-input" placeholder="Enter your text" style="margin-right: 5px;">
+  <button onclick="applyTextToTshirt()">Apply</button>
+</div>
+<!-- Price display and Order Button -->
+<div style="font-size: 25px; margin-top: 20px; width: 190px; position: absolute; bottom:190px; left:672px; text-align: center;">
+  <p id="price-text">Total Price: ₹50</p>
+  <button id="orderBtn" style="font-size: 25px; background-color: gray;">Order for ₹50</button>
+</div>
+<script>
+  // Toggle the color picker
+  document.querySelector('#opt1 a').addEventListener('click', function(e) {
+    e.preventDefault();
+    const picker = document.getElementById('color-picker');
+    picker.style.display = picker.style.display === 'none' ? 'block' : 'none';
+    addFeature('color');
+
+  });
+
+  // Function to change T-shirt parts’ color
+  let colorSelected = false;
+
+function changeTshirtColor(color) {
+  const parts = ['waist', 'shoulder1', 'shoulder2', 'arm1', 'arm2', 'outer'];
+  parts.forEach(id => {
+    document.getElementById(id).style.backgroundColor = color;
+  });
+
+  if (!colorSelected) {
+    trackChange();
+    colorSelected = true;
+  }
+}
+
+    // Toggle the texture picker
+document.querySelector('#opt2 a').addEventListener('click', function(e) {
+  e.preventDefault();
+  const picker = document.getElementById('texture-picker');
+  picker.style.display = picker.style.display === 'none' ? 'block' : 'none';
+  addFeature('texture');
+
+});
+
+// Function to change T-shirt texture
+let textureSelected = false;
+
+function changeTshirtTexture(imgUrl) {
+  const parts = ['waist', 'shoulder1', 'shoulder2', 'arm1', 'arm2', 'outer'];
+  parts.forEach(id => {
+    const part = document.getElementById(id);
+    part.style.backgroundImage = `url('${imgUrl}')`;
+  });
+
+  if (!textureSelected) {
+    trackChange();
+    textureSelected = true;
+  }
+}
+
+
+    // Toggle the design picker
+document.querySelector('#opt3 a').addEventListener('click', function(e) {
+  e.preventDefault();
+  const picker = document.getElementById('design-picker');
+  picker.style.display = picker.style.display === 'none' ? 'block' : 'none';
+  addFeature('design');
+
+});
+
+// Function to change T-shirt design
+let designSelected = false;
+
+function changeTshirtDesign(imgUrl) {
+  const parts = ['waist', 'shoulder1', 'shoulder2', 'arm1', 'arm2', 'outer'];
+  parts.forEach(id => {
+    const part = document.getElementById(id);
+    part.style.backgroundImage = `url('${imgUrl}')`;
+  });
+
+  if (!designSelected) {
+    trackChange();
+    designSelected = true;
+  }
+}
+
+
+    // Toggle the size picker
+document.querySelector('#opt4 a').addEventListener('click', function(e) {
+    e.preventDefault();
+    const picker = document.getElementById('size-picker');
+    picker.style.display = picker.style.display === 'none' ? 'block' : 'none';
+    addFeature('size');
+});
+
+// Function to change T-shirt size
+let sizeSelected = false;
+
+function changeTshirtSize(size) {
+  const targetElement = document.getElementById("size");
+  const sym = "Size:";
+  targetElement.textContent = sym + size;
+
+  if (!sizeSelected) {
+    trackChange();
+    sizeSelected = true;
+  }
+}
+
+    // Toggle the material picker
+document.querySelector('#opt6 a').addEventListener('click', function(e) {
+    e.preventDefault();
+    const picker = document.getElementById('material-picker');
+    picker.style.display = picker.style.display === 'none' ? 'block' : 'none';
+    addFeature('material');
+
+});
+
+// Function to change T-shirt material
+let materialSelected = false;
+
+function changeTshirtMaterial(material) {
+  const targetElement = document.getElementById("material");
+  const sym = "Material:";
+  targetElement.textContent = sym + material;
+  targetElement.style.fontSize = "30px";
+
+  if (!materialSelected) {
+    trackChange();
+    materialSelected = true;
+  }
+}
+
+// Toggle the text picker
+document.querySelector('#opt5 a').addEventListener('click', function(e) {
+    e.preventDefault();
+    const picker = document.getElementById('text-picker');
+    picker.style.display = picker.style.display === 'none' ? 'block' : 'none';
+    addFeature('text');
+
+});
+
+// Function to apply text to the T-shirt
+let textApplied = false;
+
+function applyTextToTshirt() {
+  const userText = document.getElementById("textInput").value;
+  document.getElementById("tshirt-text").textContent = userText;
+
+  if (!textApplied && userText.trim() !== "") {
+    trackChange();
+    textApplied = true;
+  }
+}
+
+let basePrice = 50;
+let pricePerFeature = 50;
+let selectedOptions = new Set();
+let totalPrice = basePrice;
+
+function updatePriceDisplay() {
+    const priceText = document.getElementById('price-text');
+    const orderBtn = document.getElementById('order-btn');
+    priceText.textContent = `Total Price: ₹${totalPrice}`;
+    orderBtn.textContent = `Order for ₹${totalPrice}`;
+}
+
+
+function addFeature(optionId) {
+    if (!selectedOptions.has(optionId)) {
+        selectedOptions.add(optionId);
+        totalPrice += pricePerFeature;
+        updatePriceDisplay();
+    }
+}
+
+let basePrice2 = 50;
+  let selectedOptions2 = 0;
+
+  function updatePrice() {
+    const totalPrice = basePrice2 + (selectedOptions2 * 50);
+    document.getElementById('priceVal').textContent = totalPrice;
+  }
+
+  function trackChange() {
+    selectedOptions2++;
+    updatePrice();
+  }
+
+  
+  document.getElementById('orderBtn').addEventListener('click', () => {
+    const customization = {
+      price: basePrice2 + (selectedOptions2 * 50),
+      color: "chosenColor",
+      texture: "chosenTexture",
+      text: document.getElementById("tshirt-text").innerText || "",
+      size: document.getElementById("size")?.textContent || "",
+      material: document.getElementById("material")?.textContent || "",
+    };
+
+    localStorage.setItem("customization", JSON.stringify(customization));
+    window.location.href = "order.html";
+  });
+  document.getElementById("orderBtn").addEventListener("click", () => {
+  const selectedData = {
+    color: document.getElementById('waist').style.backgroundColor,
+    texture: document.getElementById('waist').style.backgroundImage,
+    design: document.getElementById('waist').style.backgroundImage,
+    material: document.getElementById('material').textContent,
+    text: document.getElementById('tshirt-text').textContent,
+    size: document.getElementById('size').textContent,
+  
+  };
+
+  localStorage.setItem("tshirtCustomOptions", JSON.stringify(selectedData));
+  window.location.href = "order.html";
+});
+
+</script>
+</body>
+</html>
